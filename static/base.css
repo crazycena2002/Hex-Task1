@@ -1,0 +1,316 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* * {
+  outline: 1px solid black;
+} */
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  text-underline-offset: 4px;
+  display: block;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+/* Heading -  Line-height:1.2 */
+.heading-h1 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.heading-h2 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.heading-h3 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.heading-h4 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.heading-h5 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.heading-h6 {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Label */
+
+.label-lg {
+  font-size: 20px;
+}
+
+.label-md {
+  font-size: 16px;
+}
+
+.label-sm {
+  font-size: 14px;
+}
+
+.label-xs {
+  font-size: 12px;
+}
+
+/* Paragraph */
+
+.paragraph-lg {
+  font-size: 20px;
+}
+
+.paragraph-md {
+  font-size: 16px;
+}
+
+.paragraph-sm {
+  font-size: 14px;
+}
+
+.paragraph-xs {
+  font-size: 12px;
+}
+
+/* Spacing */
+.spacing-xxs {
+  letter-spacing: 4px;
+}
+
+.spacing-xs {
+  letter-spacing: 8px;
+}
+
+.spacing-s {
+  letter-spacing: 12px;
+}
+
+.spacing-m {
+  letter-spacing: 16px;
+}
+
+.spacing-l {
+  letter-spacing: 24px;
+}
+
+.spacing-xl {
+  letter-spacing: 32px;
+}
+
+.spacing-2xl {
+  letter-spacing: 40px;
+}
+
+.spacing-3xl {
+  letter-spacing: 48px;
+}
+
+.spacing-4xl {
+  letter-spacing: 56px;
+}
+
+.spacing-5xl {
+  letter-spacing: 64px;
+}
+
+.spacing-6xl {
+  letter-spacing: 80px;
+}
+
+/* 色票變數 */
+:root {
+  /* Primary */
+  --color-primary-100: #f5fee7;
+  --color-primary-200: #e8fec5;
+  --color-primary-300: #c0fa73;
+  --color-primary-400: #57a203;
+  --color-primary-500: #477a11;
+
+  /* Neutral */
+  --color-neutral-0: #ffffff;
+  --color-neutral-100: #f8f9fa;
+  --color-neutral-200: #e9ecef;
+  --color-neutral-300: #dee2e6;
+  --color-neutral-400: #ced4da;
+  --color-neutral-500: #adb5bd;
+  --color-neutral-600: #6c757d;
+  --color-neutral-700: #495057;
+  --color-neutral-800: #343a40;
+  --color-neutral-900: #212529;
+}
+
+/* 格線系統設定 */
+/* 網格欄寬計算公式：(容器寬度 - 所有 gutter) / 總欄數 * 佔用欄數 + 欄內 gutter */
+/* gutter 總寬 = 24px * 11（12欄之間共 11 個間距） */
+
+/* container設定 */
+.container {
+  max-width: 856px;
+  margin: 0 auto;
+}
+
+/* 通用設定 */
+header {
+  background-image: url(/img/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 400px;
+  font-weight: 700;
+  text-align: center;
+  padding: 151px 0;
+}
+
+.text-white {
+  color: var(--color-neutral-0);
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mt-48 {
+  margin-top: 48px;
+}
+
+.mt-64 {
+  margin-top: 64px;
+}
+
+.my-48 {
+  margin: 48px 0;
+}
+
+.py-32 {
+  padding: 32px 0;
+}
+
+.py-48 {
+  padding: 48px 0;
+}
+
+.py-64 {
+  padding: 64px 0;
+}
+
+.pb-4 {
+  padding-bottom: 4px;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.pb-24 {
+  padding-bottom: 24px;
+}
+
+.pb-48 {
+  padding-bottom: 48px;
+}
+
+.pr-8 {
+  padding-right: 8px;
+}
+
+.pl-8 {
+  padding-left: 8px;
+}
+
+.pl-12 {
+  padding-left: 12px;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.text-color-400 {
+  color: var(--color-primary-400);
+}
+
+.text-color-900 {
+  color: var(--color-neutral-900);
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--color-neutral-300);
+}
+
+.border-left {
+  border-left: 1px solid var(--color-neutral-900);
+}
+
+.border-left-3 {
+  border-left: 3px solid var(--color-neutral-300);
+}
+
+.list-style-type {
+  list-style-type: disc;
+}
+
+.banner {
+  background: var(--color-primary-100);
+  text-align: center;
+}
+
+.intro img {
+  width: 1076px;
+  max-width: none;
+  margin-left: -110px;
+}
+
+.banner-title {
+  color: var(--color-primary-400);
+}
+
+.bi {
+  padding-right: 8px;
+}
+
+.container-footer {
+  background: var(--color-neutral-100);
+  text-align: center;
+  padding: 64px 0;
+}
+
+.footertext {
+  color: var(--color-neutral-600);
+}
