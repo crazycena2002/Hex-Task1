@@ -26,6 +26,14 @@ body {
   letter-spacing: 0.05em;
 }
 
+/* 手機設定 */
+@media(max-width:992px)  {
+  .banner-md{
+    
+  }
+  
+}
+
 /* Heading -  Line-height:1.2 */
 .heading-h1 {
   font-size: 40px;
@@ -172,7 +180,7 @@ body {
 
 /* 通用設定 */
 header {
-  background-image: url(../img/hero.png);
+  background-image: url(/img/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -314,3 +322,4 @@ header {
 .footertext {
   color: var(--color-neutral-600);
 }
+
